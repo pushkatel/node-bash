@@ -1,6 +1,7 @@
+const done = require('./bash');
+
 function getDirectory() {
-  process.stdout.write(process.cwd());
-  process.stdout.write('prompt > ');
+  done(process.cwd());
 }
 
 module.exports = getDirectory;
